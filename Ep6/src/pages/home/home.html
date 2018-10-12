@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      NewsAPI
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let article of news.articles">
+      <a [href]="article.url" ><img [src]="article.urlToImage"/></a>
+    <ion-card-content>
+      <ion-card-title>
+        {{ article.title}}
+        </ion-card-title>
+      <p>
+        {{ article.description}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

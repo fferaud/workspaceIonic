@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Native Storage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <p>
+    Permet de stocker des préférences (données relativement légères)
+  </p>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Nom</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary" floating>Prénom</ion-label>
+      <ion-input type="text" [(ngModel)]="surname"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary" floating>Âge</ion-label>
+      <ion-input type="number" [(ngModel)]="years"></ion-input>
+    </ion-item>
+    
+  </ion-list>
+
+  <div padding>
+    <button ion-button round (tap)="storeIdentity()">Sauvegarder</button>
+    <button color="secondary" ion-button round (tap)="getMyName()">Load data</button>
+  </div>
+
+</ion-content>

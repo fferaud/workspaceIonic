@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>SQLite</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <p>
+    Permet de stocker ce qu'on veut.
+  </p>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Titre</ion-label>
+      <ion-input type="text" [(ngModel)]="titleMovie"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary" floating>Note</ion-label>
+      <ion-input type="number" [(ngModel)]="evalMovie"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" floating>Description</ion-label>
+      <ion-input type="text" [(ngModel)]="descMovie"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" floating>Catégorie</ion-label>
+      <ion-input type="text" [(ngModel)]="categoryMovie"></ion-input>
+    </ion-item>
+  
+    
+    
+  </ion-list>
+
+  <div padding>
+    <button ion-button round (tap)="saveMyFilm()">Sauvegarder</button>
+  </div>
+
+  <ion-list *ngIf="movies">
+    <ion-item *ngFor="let movie of movies">
+      <ion-label fixed>{{movie}}</ion-label>
+    </ion-item>
+  </ion-list>
+  
+  <div padding>
+    <button color="secondary" ion-button round (tap)="retrieveMovies()">Afficher Films</button>
+  </div>
+  
+</ion-content>

@@ -8,7 +8,9 @@
 * Send notifications immediately or set date and hour
 
 # Notes
-Only on real devices
+* Only on real devices
+
+* We can use their API to create notification
 
 # Application screenshot
 <img src="./src/assets/imgs/screen.jpg" height="500" />

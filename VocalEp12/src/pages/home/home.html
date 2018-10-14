@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Détection Vocale
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="intro-wrapper">
+    <p>Appuyez sur le micro pour parler</p>
+    <button ion-button icon-only clear color="dark" (tap)="(isListening) ? stopListening() : startListening()">
+      <ion-icon [name]="(isListening) ? 'mic-off' : 'mic'"></ion-icon>
+    </button>
+  </div>
+  <ion-list>
+    <ion-item *ngIf="matches.length <= 0">
+      Aucun résultat...
+    </ion-item>
+    <ion-item text-wrap *ngFor="let match of matches">
+      {{ match }}
+    </ion-item>
+  </ion-list>
+</ion-content>

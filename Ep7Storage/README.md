@@ -8,5 +8,7 @@
 
 ## Application screenshot
 
+<center>
 <img src="./src/assets/imgs/native.jpg" width=300 />
 <img src="./src/assets/imgs/sqlite.jpg" width=300 />
+</center>

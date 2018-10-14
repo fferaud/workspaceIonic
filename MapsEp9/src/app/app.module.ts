@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 
 // Native Components
 import { GoogleMaps } from '@ionic-native/google-maps';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     HomePage
   ],
   providers: [
+    Geolocation,
     GoogleMaps,
     StatusBar,
     SplashScreen,

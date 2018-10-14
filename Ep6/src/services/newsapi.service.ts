@@ -14,7 +14,7 @@ export class NewsApiService {
 
     private baseUrl: string = 'https://newsapi.org/v2/top-headlines';
     private apiKey: string = '9c6f4ca9f16e48569b0b417d49533c7c';
-    private source: string = 'google-news-fr';
+    private source: string = 'reddit-r-all';
     
     constructor(private http: Http) { }
 

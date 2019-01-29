@@ -2,7 +2,7 @@
 
 * Tab
 * Form
-* Fix of tab which push up when keyboard is open on android (see config.xml in <platform name="android">)
+* Fix of tab which push up when keyboard is open on android (see config.xml in section android platform)
 * Native storage
 * SQLite storage
 
